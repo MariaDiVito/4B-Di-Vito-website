@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title> Gomoku </title>
+    <meta name="description" content="Gioco">
+    <meta name="author" content="Maria Fabiana Di Vito">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html" class="active">Gomoku</a></li>
+                <li><a href="history.html">Storia</a></li>
+                <li><a href="quiz.html">Quiz Ed. Civica</a></li>
+            </ul>
+        </nav>
+        <h1>Gomoku (Cinque in Fila)</h1>
+        <h2>Sfida l'Intelligenza Artificiale sulla griglia 15x15</h2>
+        <div class="hero-image">
+            <img src="img/goban.jpg">
+        </div>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <div id="status-message">Estrazione del primo giocatore...</div>
+            
+            <div id="board" class="goban"></div>
+            
+            <button id="restart-btn" style="display: none;">Ricomincia Partita</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Realizzato da Maria Fabiana Di Vito - <a href="mailto:mariafabiana.divito@salesiani.novara.it">mariafabiana.divito@salesiani.novara.it</a></p>
+    </footer>
+
+    <script type="text/javascript" src="js/game.js"></script>
+</body>
+</html>

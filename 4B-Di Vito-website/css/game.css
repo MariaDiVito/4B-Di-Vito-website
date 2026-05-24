@@ -1,0 +1,64 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+#status-message {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1f4068;
+}
+
+
+.goban {
+    display: grid;
+    grid-template-columns: repeat(15, 35px);
+    grid-template-rows: repeat(15, 35px);
+    gap: 1px;
+    background-color: #b58863; 
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.cell {
+    background-color: #f0d9b5;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.1s;
+}
+
+.cell:hover {
+    background-color: #e1be9b;
+}
+
+
+.cell.player-x {
+    background-color: #fff;
+    color: #1a1a2e;
+    border-radius: 50%;
+    box-shadow: inset -2px -2px 4px rgba(0,0,0,0.4);
+}
+
+.cell.player-o {
+    background-color: #1a1a2e;
+    color: #fff;
+    border-radius: 50%; 
+    box-shadow: inset -2px -2px 4px rgba(255,255,255,0.2);
+}
+
+#restart-btn {
+    margin-top: 25px;
+}

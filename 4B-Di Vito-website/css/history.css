@@ -1,0 +1,26 @@
+.history-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.history-content h3 {
+    color: #1f4068;
+    font-size: 1.4rem;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #f4f6f9;
+    padding-bottom: 5px;
+}
+
+.history-content h3:first-of-type {
+    margin-top: 0;
+}
+
+.history-content p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #444;
+    text-align: justify;
+}

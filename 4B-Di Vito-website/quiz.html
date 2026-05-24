@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title> Quiz </title>
+    <meta name="description" content="Quiz">
+    <meta name="author" content="Maria Fabiana Di Vito">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Gomoku</a></li>
+                <li><a href="history.html">Storia</a></li>
+                <li><a href="quiz.html" class="active">Quiz Ed. Civica</a></li>
+            </ul>
+        </nav>
+        <h1>Quiz di Educazione Civica</h1>
+        <h2>Gaming, Azzardo e Scelte Consapevoli</h2>
+        <div class="hero-image">
+    <img src="img/azzardo.jpg" >
+</div>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <div id="start-screen" class="quiz-panel">
+                <h3>Benvenuto al test di autovalutazione</h3>
+                <p>Il quiz è composto da 10 domande a risposta multipla divise in due aree: il videogioco come fenomeno culturale/psicologico e i confini con il gioco d'azzardo (Loot Box, GAP, Normative). Mettiti alla prova!</p>
+                <button id="start-btn" class="action-btn">Comincia il Quiz</button>
+            </div>
+
+            <div id="question-screen" class="quiz-panel" style="display: none;">
+                <div id="progress">Domanda X di Y</div>
+                <h3 id="question-text">Testo della domanda?</h3>
+                
+                <form id="options-form">
+                    <div id="options-container"></div>
+                </form>
+
+                <div id="feedback" class="feedback-msg"></div>
+                <button id="next-btn" class="action-btn" disabled>Prosegui</button>
+            </div>
+
+            <div id="result-screen" class="quiz-panel" style="display: none;">
+                <h3>Quiz Completato!</h3>
+                <p id="score-text">Hai risposto correttamente a X domande su Y.</p>
+                <button id="retry-btn" class="action-btn">Ripeti il Quiz</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Realizzato da Maria Fabiana Di Vito - <a href="mailto:mariafabiana.divito@salesiani.novara.it">mariafabiana.divito@salesiani.novara.it</a></p>
+    </footer>
+
+    <script type="text/javascript" src="js/quiz.js"></script>
+</body>
+</html>

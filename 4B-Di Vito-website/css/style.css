@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav {
+    background-color: #162447;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #fff;
+    background-color: #e43f5a;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2.2rem;
+}
+
+header h2 {
+    text-align: center;
+    color: #818cf8;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+
+.hero-image {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    height: 200px;
+    background: linear-gradient(135deg, #1f4068, #162447);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1f4068;
+}
+
+.hero-placeholder {
+    color: #e2e8f0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+
+.btn, .action-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e43f5a;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn:hover, .action-btn:hover:not(:disabled) {
+    background-color: #b93248;
+}
+
+
+footer {
+    background-color: #1a1a2e;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    border-top: 2px solid #e43f5a;
+}
+
+footer a {
+    color: #818cf8;
+    text-decoration: none;
+}
